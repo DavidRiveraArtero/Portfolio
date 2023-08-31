@@ -1,0 +1,26 @@
+main{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.sect_aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sect_aboutMe p{
+    max-width: 75ch;
+    font-size: 25px;
+}
+
+.sect_aboutMe p span{
+    color: #316AF7;
+    font-weight: bold;
+}
+
+
+
+
+
+
