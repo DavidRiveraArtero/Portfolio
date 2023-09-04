@@ -1,7 +1,6 @@
 import "./home.css"
-import CVLogo from '../../../public/cv.svg';
-import Documento from '../../../public/CV_DavidRivera.pdf'
-import ImgDavid from '../../../public/david.jpg'
+import Documento from '../../assets/CV_DavidRivera.pdf'
+import ImgDavid from '../../assets/david.jpg'
 
 export function Home(){
     return (

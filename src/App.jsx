@@ -1,7 +1,7 @@
 import { HeaderPort } from './components/header/header'
 import { Home } from './components/home/home'
-import imgDavid from './../public/david.jpg'
-import imgAjedrez from '/../public/Ajedrez.png'
+import imgDavid from './assets/david.jpg'
+import imgAjedrez from './assets/Ajedrez.png'
 
 
 import './App.css'
