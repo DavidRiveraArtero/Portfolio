@@ -9,7 +9,7 @@ export function Home(){
             <section className='section_quickInfo'>
                 <article className='art_section_quickInfo'>
                     <div>
-                        <img className="profile_icon" alt="profile_icon" src="../../../public/david.jpg"></img>
+                        <img className="profile_icon" alt="profile_icon" src={ImgDavid}></img>
                     </div>
                     <div className='info'>
                         <section className="info_usuario">

@@ -1,6 +1,8 @@
 import { HeaderPort } from './components/header/header'
 import { Home } from './components/home/home'
 import imgDavid from './../public/david.jpg'
+import imgAjedrez from '/../public/Ajedrez.png'
+
 
 import './App.css'
 
@@ -18,12 +20,12 @@ function App() {
             <h1>Proyectos</h1>
             <section className='listProyect'>
               <figure>
-                <img className='imgProyect' src="/../public/Ajedrez.png"/>
+                <img className='imgProyect' src={imgAjedrez}/>
                 <figcaption>En este proyecto ponemos en practica la modificacion de arrays</figcaption>
               </figure>
 
               <figure>
-                <img className='imgProyect' src="/../public/david.jpg"/>
+                <img className='imgProyect' src={imgDavid}/>
                 <figcaption>En este proyecto ponemos en practica la modificacion de arrays</figcaption>
               </figure>
               
