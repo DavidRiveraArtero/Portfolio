@@ -28,7 +28,7 @@ function App() {
               </figure>
               
               <figure>
-                <img className='imgProyect' src={ImgDavid}/>
+                <img className='imgProyect' src={imgDavid}/>
                 <figcaption>En este proyecto ponemos en practica la modificacion de arrays</figcaption>
               </figure>
             </section>
