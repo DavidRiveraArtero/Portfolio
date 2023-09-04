@@ -1,24 +1,62 @@
-main{
-    padding-left: 20%;
-    padding-right: 20%;
+/* UN DIV QUE ENGLOBE TODO ES UN POCO POLEMICO */
+/* Buscar OTRA forma de hacer esto */
+
+/*.firstP{
+    background: linear-gradient(rgba(156,55,224,100) 0%, rgba(36,36,32,100) 100%);
+   
+}*/
+
+.containerProyect{
+    margin-top: 4%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
-.sect_aboutMe{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.containerProyect h1{
+    font-size: 40px;
 }
 
-.sect_aboutMe p{
-    max-width: 75ch;
-    font-size: 25px;
+.listProyect{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
 }
 
-.sect_aboutMe p span{
-    color: #316AF7;
-    font-weight: bold;
+figure{
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    width: 284px;
 }
 
+figure > * {
+    grid-area: 1/1;
+    transition: .4s;
+}
+
+figure figcaption {
+
+    color: white;
+    padding: .75rem;
+    background: var(--c,#0009);
+    clip-path: inset(0 var(--_i,100%) 0 0);
+    margin: -1px;
+}
+
+figure:hover figcaption{
+    --_i: 0%;
+    
+}
+figure:hover img {
+    transform: scale(1.1);
+}
+
+
+.imgProyect{
+    width: 100%;
+    height: 284px;
+}
 
 
 

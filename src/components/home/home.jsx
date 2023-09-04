@@ -2,13 +2,14 @@ import "./home.css"
 import CVLogo from '../../../public/cv.svg';
 import Documento from '../../../public/CV_DavidRivera.pdf'
 import ImgDavid from '../../../public/david.jpg'
+
 export function Home(){
     return (
         <>
             <section className='section_quickInfo'>
                 <article className='art_section_quickInfo'>
                     <div>
-                        <img alt="profile_icon" src={ImgDavid}></img>
+                        <img className="profile_icon" alt="profile_icon" src="../../../public/david.jpg"></img>
                     </div>
                     <div className='info'>
                         <section className="info_usuario">
@@ -26,9 +27,10 @@ export function Home(){
                     </div>
                 </article>
             </section>
-
-            
-        
+            <section className='sect_aboutMe'>
+                <p>Apasionado de la programación que quiere dar sus primeros pasos en esta 
+                industria y <span>seguir creciendo</span> tanto <span>personalmente</span> como <span>profesionalmente</span>.</p>
+            </section>
         </>
     )
 }
