@@ -57,9 +57,8 @@
   border-radius: 5px;
   width: 200px;
   text-align: center;
-  -webkit-box-shadow: 2px 4px 22px -3px rgba(0,0,0,0.75);
-  -moz-box-shadow: 2px 4px 22px -3px rgba(0,0,0,0.75);
   box-shadow: 2px 4px 22px -3px rgba(0,0,0,0.75);
+  transition: all .7s;
 }
 
 .info_enlaces a svg{
@@ -68,11 +67,8 @@
 }
 
 .info_enlaces a:hover{
-  -webkit-box-shadow: 2px 4px 22px -3px rgba(157,56,224,1);
-  -moz-box-shadow: 2px 4px 22px -3px rgba(157,56,224,1);
   box-shadow: 2px 4px 22px -3px rgba(157,56,224,1);
 }
-
 
 
 .sect_aboutMe{

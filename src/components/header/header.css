@@ -34,6 +34,7 @@ header .sec_nav h3:hover{
     align-items: center;
     cursor: pointer;
     display: none;
+ 
 }
 
 .btn_menu svg:hover{

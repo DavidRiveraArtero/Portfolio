@@ -1,6 +1,6 @@
 import "./home.css"
-import Documento from '../../assets/CV_DavidRivera.pdf'
-import ImgDavid from '../../assets/david.jpg'
+import Documento from '../../assets/doc/CV_DavidRivera.pdf'
+import ImgDavid from '../../assets/img/david.jpg'
 
 export function Home(){
     return (
