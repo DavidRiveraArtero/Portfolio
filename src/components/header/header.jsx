@@ -25,10 +25,10 @@ export function HeaderPort (){
           <h2 className='logo_header'>DARIAR</h2>
         </section>
         <nav className='sec_nav'>
-          <h3>About Me</h3> 
-          <h3>Proyecs</h3>
-          <h3>Skills</h3>
-          <h3>Contact</h3>
+          <button>About Me</button> 
+          <button>Proyecs</button>
+          <button>Skills</button>
+          <button>Contact</button>
         </nav>
         <nav className='btn_menu'>
           <svg onClick={mostrarMenu} xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 24 24">
@@ -37,10 +37,10 @@ export function HeaderPort (){
         </nav>
       </header>
       <nav className='ocult_nav'>
-        <a><span>About Me</span></a>
-        <a><span>Proyecs</span></a>
-        <a><span>Skills</span></a>
-        <a><span>Contact</span></a>
+        <a>About Me</a>
+        <a>Proyecs</a>
+        <a>Skills</a>
+        <a>Contact</a>
       </nav>
     </>
   )

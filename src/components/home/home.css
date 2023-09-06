@@ -22,9 +22,11 @@
 }
 
 .art_section_quickInfo .info .ofice{
-  animation: teclear 2s steps(222);
+  animation: teclear2 2s steps(100) normal;
   margin-top: 0;
   color: #2fedd0;
+  text-shadow: 0 0px 2px #FFF, 0 -3px 20px #2FEDCF;/*MIRAR SI NOS GUSTA NEON*/
+
 
 }
 
@@ -32,6 +34,8 @@
   margin-bottom: 0px;
   animation: teclear 2s steps(222), efecto .5s step-end infinite alternate;
 }
+
+
 
 .profile_icon{
   width: 380px;
@@ -58,7 +62,7 @@
   width: 200px;
   text-align: center;
   box-shadow: 2px 4px 22px -3px rgba(0,0,0,0.75);
-  transition: all .7s;
+  transition: all .5s;
 }
 
 .info_enlaces a svg{
@@ -67,7 +71,8 @@
 }
 
 .info_enlaces a:hover{
-  box-shadow: 2px 4px 22px -3px rgba(157,56,224,1);
+  box-shadow: 0 0px 2px #000000, 0 -3px 15px #F56E00;/*MIRAR SI NOS GUSTA NEON*/
+
 }
 
 
@@ -92,17 +97,38 @@
 
 @keyframes teclear {
   from {
-    clip-path: polygon(0% 0%, 0 0, 0 100%, 0% 100%);     
+    clip-path: polygon(0% 0%, 0 0, 0 100%, 0% 100%);  
+    
+
   }
   
   to{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    
+
   }
 }
+
+@keyframes teclear2 {
+  from {
+    clip-path: polygon(0% 0%, 0 0, 0 100%, 0% 100%);  
+    text-shadow: 0 0px 0px #FFF, 0 -0px 0px #2FEDCF;/*MIRAR SI NOS GUSTA NEON*/
+    
+
+  }
+  
+  to{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    text-shadow: 0 0px 2px #FFF, 0 -6px 25px #2FEDCF;/*MIRAR SI NOS GUSTA NEON*/
+
+  }
+}
+
   
 @keyframes efecto {
   50%{
     border-color: transparent;
+
   }
 }
 
@@ -143,6 +169,16 @@
     margin-bottom: 10px;
     width: 100%;
   }
+
+  .name{
+    text-align: center;
+  }
+
+  .ofice{
+    text-align: center;
+  }
+
+
 
  
 }

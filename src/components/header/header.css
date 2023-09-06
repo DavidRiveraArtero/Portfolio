@@ -3,11 +3,12 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #9C37E0;
+    
 }   
   
 header .sec_logo{
     padding-left: 20%;
+    
 }
 
 header .sec_nav{
@@ -19,14 +20,21 @@ header .sec_nav{
 
 }
 
-header .sec_nav h3{
-    transition: all .6s;
+header .sec_nav button{
+    transition: all .3s;
     cursor: pointer;
+    color: #F56E00;
+    font-size: 1.17em;
+    
+    border: 0;
+    background-color: #242424;
 
 }
 
-header .sec_nav h3:hover{
-    color: red;
+header .sec_nav button:hover{
+    font-size: 21px;
+    text-shadow: 0 0px 2px #000000, 0 -3px 25px #F56E00;/*MIRAR SI NOS GUSTA NEON*/
+
 }
 
 .btn_menu{
