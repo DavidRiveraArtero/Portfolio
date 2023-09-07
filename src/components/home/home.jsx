@@ -4,10 +4,9 @@ import ImgDavid from '../../assets/img/david.jpg'
 
 export function Home(){
     const ticket = document.getElementsByClassName('art_section_quickInfo')[0]
-    const section = document.getElementsByClassName('section_quickInfo')[0]
+    const card = document.getElementsByClassName('section_quickInfo')[0].getBoundingClientRect()
 
-    const {width, height} = section.getBoundingClientRect()
-
+    const {width, height} = card
     function cardAnimation(event){
         const {clientX, clientY} = event
         
@@ -23,10 +22,15 @@ export function Home(){
 
     }
 
+    function cancelCardAnimation(){
+        ticket.style.transform = `rotateX(0deg) rotateY(0deg)`
+
+    }
+
 
     return (
         <>
-            <section className='section_quickInfo' onMouseMove={cardAnimation}>
+            <section className='section_quickInfo' onMouseMove={cardAnimation} onMouseLeave={cancelCardAnimation}>
                 <article className='art_section_quickInfo' >
                     <div className="image">
                         <img className="profile_icon" alt="profile_icon" src={ImgDavid}></img>
