@@ -1,21 +1,19 @@
 import "./home.css"
 import Documento from '../../assets/doc/CV_DavidRivera.pdf'
 import ImgDavid from '../../assets/img/david.jpg'
-import { useEffect } from "react"
+import { useEffect,useState } from "react"
 export function Home(){
-
-
-    useEffect(()=> {
-        const ticket = document.getElementsByClassName('art_section_quickInfo')[0]
-        const card = document.getElementsByClassName('section_quickInfo')[0].getBoundingClientRect()
-        const {width, height} = card
-    },[])
+    
 
 
 
     function cardAnimation(event){
+        const ticket = document.getElementsByClassName('art_section_quickInfo')[0]
+
+        const card = document.getElementsByClassName('section_quickInfo')[0].getBoundingClientRect()
+
         const {clientX, clientY} = event
-        
+        const {width, height} = card
         const halfWidth = width / 2
         const halfHeight = height / 2
        
