@@ -1,14 +1,23 @@
 .section_quickInfo{
   padding-top: 7%;
-  padding-bottom: 5%; /* ESTO PUEDE VARIAR */
+  padding-bottom: 3%; /* ESTO PUEDE VARIAR */
   padding-left: 20%;
   padding-right: 20%;
+  perspective: 1000px;
+
 
 }
   
 .art_section_quickInfo{
   display: flex;
   flex-direction: row;
+  padding: 15px;
+  box-shadow: 0 5px 20px rgba(156,55,224,100);
+  border-radius: 15px;
+  position: relative;
+  
+ 
+ 
 }
 .art_section_quickInfo .info {
   display: flex;
@@ -16,6 +25,7 @@
   justify-content: center;
   padding-left: 150px;
   height: 370px; /* SE PUEDE CAMBIAR */
+  
 }
 .art_section_quickInfo .info h1{
   font-size: 40px;
@@ -36,11 +46,11 @@
 }
 
 
-
 .profile_icon{
   width: 380px;
   height: 380px;
   border-radius: 50%;
+  
 }
 
 .info_enlaces{
@@ -141,19 +151,39 @@
     padding-right: 0%;
     padding-top: 10%;
     padding-bottom: 0%;
+    perspective: none;
+    width: 350px;
+    transform: rotateX(0deg) rotateY(0deg)!important;
+    margin: 0% auto;
   }
   
   .art_section_quickInfo{
     display: flex;
     flex-direction: column;
+    padding: 0;
+    transform: rotateX(0deg) rotateY(0deg)!important;
+
+  }
+
+  .image{
+    padding-top: 20px;
+    margin: 0% auto;
+  }
+
+  .profile_icon{
+    width: 200px;
+    height: 200px;
+  
   }
   
   .art_section_quickInfo .info{
     padding-left: 0;
+    transform: rotateX(0deg) rotateY(0deg)!important;
+
   }
   
   .art_section_quickInfo .info h1{
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .info_enlaces{
@@ -163,11 +193,16 @@
     height: auto;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 50px;
+    transform: rotateX(0deg) rotateY(0deg)!important;
+
   }
 
   .info_enlaces a {
     margin-bottom: 10px;
     width: 100%;
+    transform: rotateX(0deg) rotateY(0deg)!important;
+
   }
 
   .name{

@@ -3,11 +3,32 @@ import Documento from '../../assets/doc/CV_DavidRivera.pdf'
 import ImgDavid from '../../assets/img/david.jpg'
 
 export function Home(){
+    const ticket = document.getElementsByClassName('art_section_quickInfo')[0]
+    const section = document.getElementsByClassName('section_quickInfo')[0]
+
+    const {width, height} = section.getBoundingClientRect()
+
+    function cardAnimation(event){
+        const {clientX, clientY} = event
+        
+        const halfWidth = width / 2
+        const halfHeight = height / 2
+       
+        const rotationX = ((clientX - halfWidth) / halfWidth) * 10
+        const rotationY = ((clientY - halfHeight) / halfHeight) * 10
+        
+        ticket.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`
+        
+
+
+    }
+
+
     return (
         <>
-            <section className='section_quickInfo'>
-                <article className='art_section_quickInfo'>
-                    <div>
+            <section className='section_quickInfo' onMouseMove={cardAnimation}>
+                <article className='art_section_quickInfo' >
+                    <div className="image">
                         <img className="profile_icon" alt="profile_icon" src={ImgDavid}></img>
                     </div>
                     <div className='info'>
