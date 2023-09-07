@@ -8,26 +8,26 @@ export function Home(){
 
 
     function cardAnimation(event){
-        const ticket = document.getElementsByClassName('art_section_quickInfo')[0]
+       
 
-        const card = document.getElementsByClassName('section_quickInfo')[0].getBoundingClientRect()
+ 
 
         const {clientX, clientY} = event
-        const {width, height} = card
+        const {width, height} = document.getElementsByClassName('section_quickInfo')[0].getBoundingClientRect()
         const halfWidth = width / 2
         const halfHeight = height / 2
        
         const rotationX = ((clientX - halfWidth) / halfWidth) * 10
         const rotationY = ((clientY - halfHeight) / halfHeight) * 10
         
-        ticket.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`
+        document.getElementsByClassName('art_section_quickInfo')[0].style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`
         
 
 
     }
 
     function cancelCardAnimation(){
-        ticket.style.transform = `rotateX(0deg) rotateY(0deg)`
+        document.getElementsByClassName('art_section_quickInfo')[0].style.transform = `rotateX(0deg) rotateY(0deg)`
 
     }
 
