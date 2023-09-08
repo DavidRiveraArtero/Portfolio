@@ -3,28 +3,28 @@
         {
             "name":"Ajedrez",
             "ruta":"https://main--candid-fenglisu-29722f.netlify.app/",
-            "img":"../../assets/img/Ajedrez.png",
+            "img":"../../../public/img/Ajedrez.png",
             "desc":"En este proyecto ponemos en practica la modificacion de arrays",
             "languaje":[
                 {
-                    "ruta_lang":"../../assets/svg/html.svg"
+                    "ruta_lang":"../../../public/svg/html.svg"
                 },
                 {
-                    "ruta_lang":"../../assets/svg/react.svg"
+                    "ruta_lang":"../../../public/svg/react.svg"
                 }
             ]
         },
         {
             "name":"Api_LOL",
             "ruta":"https://main--candid-fenglisu-29722f.netlify.app/",
-            "img":"../../assets/img/Api_lol.png",
+            "img":"../../../public/img/Api_lol.png",
             "desc":"En este proyecto nos conectamos a una API del LOL dond recojemos la informacion de los jugadores",
             "languaje":[
                 {
-                    "ruta_lang":"../../assets/svg/html.svg"
+                    "ruta_lang":"../../../public/svg/html.svg"
                 },
                 {
-                    "ruta_lang":"../../assets/svg/react.svg"
+                    "ruta_lang":"../../../public/svg/react.svg"
                 }
             ]
         }
