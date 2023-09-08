@@ -1,11 +1,4 @@
-
-import css from '../../assets/svg/css.svg'
-import html from '../../assets/svg/html.svg'
-import react from '../../assets/svg/react.svg'
-
-
-import imgDavid from '../../assets/img/david.jpg'
-import imgAjedrez from '../../assets/img/Ajedrez.png'
+import proyectos from '../../assets/doc/proyects.json'
 
 import "./proyects.css"
 
@@ -14,26 +7,26 @@ export function Proyect(){
         <section className='containerProyect' id='proyect'>
             <h1>PROYECTOS</h1>
             <section className='listProyect'>
-              <a className='listProyectRef' href='https://main--candid-fenglisu-29722f.netlify.app/' target="_blank">
-                <img className='imgProyect' src={imgAjedrez}/>
-                <div className='languajeProyect'>
-                  <img src={html}/>
-                  <img src={css}/>
-                  <img src={react}/>
-                </div>
-                <figcaption>En este proyecto ponemos en practica la modificacion de arrays</figcaption>
-              </a>
-
-              <a className='listProyectRef'>
-                <img className='imgProyect' src={imgDavid}/>
-                <figcaption>En este proyecto ponemos en practica la modificacion de arrays</figcaption>
-              </a>
-              
-              <a className='listProyectRef'>
-                <img className='imgProyect' src={imgDavid}/>
-                <figcaption>En este proyecto ponemos en practica la modificacion de arrays</figcaption>
-              </a>
-              
+              {
+                proyectos.proyect.map((proyect, key)=>{
+                  return (
+                    <a key={key} className='listProyectRef' href={proyect.ruta} target="_blank">
+                      <img className='imgProyect' src={proyect.img}/>
+                      <div className='languajeProyect'>
+                        {
+                          proyect.languaje.map((lang,key2)=>{
+                            console.log("LANG: ", key2)
+                            return(
+                              <img key={key2} src={lang}/>
+                            )
+                          })
+                        }
+                      </div>
+                      <figcaption>{proyect.desc}</figcaption>
+                    </a>
+                  )
+                })
+              }  
             </section>
           </section> 
     )

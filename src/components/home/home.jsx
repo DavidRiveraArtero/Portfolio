@@ -1,7 +1,7 @@
 import "./home.css"
 import Documento from '../../assets/doc/CV_DavidRivera.pdf'
 import ImgDavid from '../../assets/img/david.jpg'
-import { useEffect,useState } from "react"
+
 export function Home(){
     
 
@@ -17,8 +17,8 @@ export function Home(){
         const halfWidth = width / 2
         const halfHeight = height / 2
        
-        const rotationX = ((clientX - halfWidth) / halfWidth) * 10
-        const rotationY = ((clientY - halfHeight) / halfHeight) * 10
+        const rotationX = ((clientX - halfWidth) / halfWidth) * 11
+        const rotationY = ((clientY - halfHeight) / halfHeight) * 11
         
         document.getElementsByClassName('art_section_quickInfo')[0].style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`
         
@@ -34,7 +34,7 @@ export function Home(){
 
     return (
         <>
-            <section className='section_quickInfo' onMouseMove={cardAnimation} onMouseLeave={cancelCardAnimation}>
+            <section className='section_quickInfo' onMouseMove={cardAnimation}>
                 <article className='art_section_quickInfo' >
                     <div className="image">
                         <img className="profile_icon" alt="profile_icon" src={ImgDavid}></img>
