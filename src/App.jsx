@@ -1,11 +1,8 @@
 import { HeaderPort } from './components/header/header'
 import { Home } from './components/home/home'
-
-
-
-
-import './App.css'
 import { Proyect } from './components/proyects/proyects';
+import './App.css'
+
 
 function App() {
 

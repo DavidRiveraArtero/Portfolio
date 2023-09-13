@@ -7,10 +7,14 @@
             "desc":"En este proyecto ponemos en practica la modificacion de arrays",
             "languaje":[
                 {
-                    "ruta_lang":"html.svg"
+                    "ruta_lang":"svg/html.svg"
                 },
                 {
-                    "ruta_lang":"/react.svg"
+                    
+                    "ruta_lang":"svg/css.svg"
+                },
+                {
+                    "ruta_lang":"svg/react.svg"
                 }
             ]
         },
@@ -18,13 +22,16 @@
             "name":"Api_LOL",
             "ruta":"https://main--candid-fenglisu-29722f.netlify.app/",
             "img":"/img/Api_lol.png",
-            "desc":"En este proyecto nos conectamos a una API del LOL dond recojemos la informacion de los jugadores",
+            "desc":"En este proyecto nos conectamos a una API del LOL donde recojemos la informacion de los jugadores y mostramos una lista de las ultimas partidas",
             "languaje":[
                 {
-                    "ruta_lang":"/html.svg"
+                    "ruta_lang":"svg/html.svg"
                 },
                 {
-                    "ruta_lang":"react.svg"
+                    "ruta_lang":"svg/css.svg"
+                },
+                {
+                    "ruta_lang":"svg/react.svg"
                 }
             ]
         },
@@ -32,13 +39,13 @@
             "name":"Api_LOL",
             "ruta":"https://main--candid-fenglisu-29722f.netlify.app/",
             "img":"/img/Api_lol.png",
-            "desc":"En este proyecto nos conectamos a una API del LOL dond recojemos la informacion de los jugadores",
+            "desc":"En este proyecto nos conectamos a una API del LOL donde recojemos la informacion de los jugadores y mostramos una lista de las ultimas partidas",
             "languaje":[
                 {
-                    "ruta_lang":"/html.svg"
+                    "ruta_lang":"svg/html.svg"
                 },
                 {
-                    "ruta_lang":"react.svg"
+                    "ruta_lang":"svg/react.svg"
                 }
             ]
         }

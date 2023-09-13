@@ -1,7 +1,5 @@
 import proyectos from '../../assets/doc/proyects.json'
 
-import algo from './../../assets/img/Ajedrez.png'
-
 import "./proyects.css"
 
 export function Proyect(){
@@ -11,9 +9,10 @@ export function Proyect(){
             <section className='listProyect'>
               {
                 proyectos.proyect.map((proyect, key)=>{
-                  console.log(proyect.languaje.length)
+                 
                   return (
                     <a key={key} className='listProyectRef' href={proyect.ruta} target="_blank">
+                      
                       <img className='imgProyect' src={proyect.img}/>
                       <div className='languajeProyect'>
                         {
@@ -25,7 +24,15 @@ export function Proyect(){
                           })
                         }
                       </div>
-                      <figcaption>{proyect.desc}</figcaption>
+                      
+                      <figcaption>
+                        <section className='title'>
+                          <h2>{proyect.name}</h2>
+                        </section>
+                        <section className='desc'>
+                          <p>{proyect.desc}</p>
+                        </section>
+                      </figcaption>
                     </a>
                   )
                 })

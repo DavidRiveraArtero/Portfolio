@@ -5,13 +5,8 @@ import ImgDavid from '../../assets/img/david.jpg'
 export function Home(){
     
 
-
-
     function cardAnimation(event){
-       
-
- 
-
+        document.getElementsByClassName('art_section_quickInfo')[0].style.transition = `none`
         const {clientX, clientY} = event
         const {width, height} = document.getElementsByClassName('section_quickInfo')[0].getBoundingClientRect()
         const halfWidth = width / 2
@@ -19,14 +14,12 @@ export function Home(){
        
         const rotationX = ((clientX - halfWidth) / halfWidth) * 11
         const rotationY = ((clientY - halfHeight) / halfHeight) * 11
-        
         document.getElementsByClassName('art_section_quickInfo')[0].style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`
-        
-
 
     }
 
     function cancelCardAnimation(){
+        document.getElementsByClassName('art_section_quickInfo')[0].style.transition = `transform .5s ease-in-out`
         document.getElementsByClassName('art_section_quickInfo')[0].style.transform = `rotateX(0deg) rotateY(0deg)`
 
     }
@@ -34,10 +27,10 @@ export function Home(){
 
     return (
         <>
-            <section className='section_quickInfo' onMouseMove={cardAnimation}>
+            <section className='section_quickInfo' onMouseMove={cardAnimation} onMouseLeave={cancelCardAnimation}>
                 <article className='art_section_quickInfo' >
                     <div className="image">
-                        <img className="profile_icon" alt="profile_icon" src={ImgDavid}></img>
+                        <img className="profile_icon" alt="profile_icon" src={ImgDavid}/>
                     </div>
                     <div className='info'>
                         <section className="info_usuario">
