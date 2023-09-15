@@ -39,14 +39,14 @@
         border-radius: 14px;
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
-        width: 70%;
+        width: 80%;
         margin: 0% auto;
-        gap: 20px;
+        
     }
 
     .all_skills img{
-    
-        padding: 0px; 
+       
+        padding: 20px; 
     }
 
 }
