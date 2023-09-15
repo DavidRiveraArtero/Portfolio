@@ -6,5 +6,9 @@
    
 }*/
 
-
-
+.sectionTitle{
+    font-size: 45px;
+    color: #3FEDCF;
+    text-shadow: 0 0px 2px #FFF, 0 -3px 20px #2FEDCF;/*MIRAR SI NOS GUSTA NEON*/
+    
+}

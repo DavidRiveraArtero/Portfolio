@@ -3,7 +3,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }   
   
 header .sec_logo{
@@ -87,6 +86,18 @@ header .sec_nav button:hover{
     }
     .btn_menu{
         display: flex;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+
+    }
+    header .sec_logo{
+        padding: 0;
+        font-size: 22px;
+        text-align: center;
     }
 }
 

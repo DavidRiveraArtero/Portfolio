@@ -50,7 +50,7 @@ export function Home(){
             </section>
             <section className='sect_aboutMe'>
                 <p>Apasionado de la programación que quiere dar sus primeros pasos en esta 
-                industria y <span>seguir creciendo</span> tanto <span>personalmente</span> como <span>profesionalmente</span>, intentando dar siempre lo mejor de mi</p>
+                industria y <span>seguir creciendo</span> tanto <span>personalmente</span> como <span>profesionalmente</span>, intentando dar siempre lo mejor de mi.</p>
             </section>
         </>
     )

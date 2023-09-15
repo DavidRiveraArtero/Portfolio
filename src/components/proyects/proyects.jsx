@@ -5,7 +5,7 @@ import "./proyects.css"
 export function Proyect(){
     return (
         <section className='containerProyect' id='proyect'>
-            <h1>PROYECTOS</h1>
+            <h1 className='sectionTitle'>PROYECTOS</h1>
             <section className='listProyect'>
               {
                 proyectos.proyect.map((proyect, key)=>{

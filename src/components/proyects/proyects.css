@@ -14,12 +14,7 @@
     opacity: 1;
 }
 
-.containerProyect h1{
-    font-size: 45px;
-    color: #3FEDCF;
-    text-shadow: 0 0px 2px #FFF, 0 -3px 20px #2FEDCF;/*MIRAR SI NOS GUSTA NEON*/
-    
-}
+
 
 .listProyect{
     display: grid;
@@ -107,7 +102,7 @@
 }
 
 .languajeProyect img{
-    width: 40px;
+    width: 50px;
 }
 
 @media only screen and (max-width: 390px){
@@ -127,7 +122,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
     }
 
     .listProyectRef{

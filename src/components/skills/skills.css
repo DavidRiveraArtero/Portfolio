@@ -1,0 +1,25 @@
+.section_skills{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.all_skills{
+    
+    box-shadow: 0 5px 20px rgba(156,55,224,100);
+
+    border-radius: 14px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 40px;
+     
+}
+
+.all_skills img{
+    width: 100px;
+    margin: 0% auto;
+    padding: 12px;
+   
+}
+
