@@ -36,16 +36,19 @@
             ]
         },
         {
-            "name":"Api_LOL",
-            "ruta":"https://main--candid-fenglisu-29722f.netlify.app/",
-            "img":"/img/Api_lol.png",
-            "desc":"En este proyecto nos conectamos a una API del LOL donde recojemos la informacion de los jugadores y mostramos una lista de las ultimas partidas",
+            "name":"GifApp",
+            "ruta":"https://poetic-syrniki-59a9d9.netlify.app/",
+            "img":"/img/GifApp.png",
+            "desc":"Buscador de Gift donde guardamos las busquedas en local storage",
             "languaje":[
                 {
                     "ruta_lang":"svg/html.svg"
                 },
                 {
-                    "ruta_lang":"svg/react.svg"
+                    "ruta_lang":"svg/angular.svg"
+                }, 
+                {
+                    "ruta_lang":"svg/bootstrap.svg"
                 }
             ]
         }
