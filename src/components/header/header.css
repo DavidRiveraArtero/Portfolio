@@ -71,13 +71,20 @@ header .sec_nav button:hover{
 
 /* MEDIA */
 
-@media only screen and (max-width: 1191px){
-
-    header .sec_nav{
-        width: 30%;
+@media only screen and (max-width: 1674px){
+    .sec_nav{
+       gap: 40px;
+       justify-content: center!important;
+       width: 40%!important;
+       padding-right: 15%!important;
     }
-  
-  
+    
+}
+
+@media only screen and (max-width: 1112px){
+    .sec_nav{
+        gap: 20px;
+    }
 }
   
 @media only screen and (max-width: 390px){

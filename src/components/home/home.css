@@ -4,7 +4,7 @@
   padding-left: 20%;
   padding-right: 20%;
   perspective: 1000px;
-
+  
 
 }
   
@@ -16,6 +16,7 @@
   box-shadow: 0 5px 20px rgba(156,55,224,100);
   border-radius: 15px;
   position: relative;
+  width: 100%;
   
  
  
@@ -32,7 +33,7 @@
   font-size: 40px;
 }
 
-.art_section_quickInfo .info .ofice{
+.ofice{
   animation: teclear2 2s steps(100) normal;
   margin-top: 0;
   color: #2fedd0;
@@ -214,8 +215,6 @@
   .ofice{
     text-align: center;
   }
-
-
-
- 
 }
+
+
