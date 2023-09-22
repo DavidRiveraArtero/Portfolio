@@ -12,11 +12,9 @@ export function HeaderPort (){
           <button>Sobre mi</button> 
           <button>Proyectos</button>
           <button>Skills</button>
-          <button>Contacto</button>
+          <button>Contactar</button>
         </nav>
       </header>
-     
     </>
-  )
-   
+  ) 
 }

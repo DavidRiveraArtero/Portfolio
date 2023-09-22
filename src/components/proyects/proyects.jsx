@@ -13,7 +13,7 @@ export function Proyect(){
                   return (
                     <a key={key} className='listProyectRef' href={proyect.ruta} target="_blank">
                       
-                      <img className='imgProyect' src={proyect.img}/>
+                      <img alt='imgProyect' className='imgProyect' src={proyect.img}/>
                       <div className='languajeProyect'>
                         {
                           proyect.languaje.map((lang,key2)=>{

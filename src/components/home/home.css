@@ -25,13 +25,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 150px;
   height: 370px; /* SE PUEDE CAMBIAR */
   
 }
-.art_section_quickInfo .info h1{
-  font-size: 40px;
-}
+
 
 .ofice{
   animation: teclear2 2s steps(100) normal;
@@ -93,6 +90,8 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
 
 }
 
@@ -105,6 +104,8 @@
   color: #316AF7;
   font-weight: bold;
 }
+
+
 
 
 
@@ -146,6 +147,78 @@
 }
 
 /* MEDIA */
+@media only screen and (max-width: 1920px){
+  .info{
+    padding-left: 150px;
+  }
+  .name{
+    font-size: 40px;
+  }
+
+  .ofice{
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-device-width: 1626px){
+  .info{
+      padding-left: 65px;
+  }
+
+  .ofice{
+    font-size: 35px;
+  }
+
+  .info_enlaces{
+    
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-device-width: 1472px){
+
+  .info_usuario{
+    height: 200px;
+  }
+
+  .info_enlaces{
+    flex-direction: column;
+    height: 100%;
+    gap: 15px;
+  }
+
+  .info_enlaces a{
+    width: 90%;
+  }
+}
+
+
+@media only screen and (max-width: 1392px){
+  .info{
+    padding-left: 55px;
+  }
+
+.ofice{
+  font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1282px){
+  .info{
+    padding-left: 0px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .art_section_quickInfo{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info_enlaces{
+    flex-direction: row;
+  }
+}
+
 
 @media only screen and (max-width: 390px){
 
@@ -215,6 +288,15 @@
   .ofice{
     text-align: center;
   }
+
+  .sect_aboutMe{
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
+
+  .sect_aboutMe p{
+    font-size: 23px;
+    width: 100%;
+  }
 }
-
-

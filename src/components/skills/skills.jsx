@@ -11,7 +11,7 @@ export function Skills(){
                         {
                             skills.map((skill,index)=>{
                                 return (
-                                    <img key={index} src={skill}></img>
+                                    <img alt='iconLang' key={index} src={skill}></img>
                                 )
                             })
                         }

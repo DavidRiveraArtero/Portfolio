@@ -7,7 +7,7 @@ import './App.css'
 
 function App() {
 
-  function reveal() {
+  /*function reveal() {
     var reveals = document.getElementsByClassName("containerProyect");
   
     for (var i = 0; i < reveals.length; i++) {
@@ -17,23 +17,23 @@ function App() {
   
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
-      } 
+      }
     }
   }
   
-  window.addEventListener("scroll", reveal);
+  window.addEventListener("scroll", reveal);*/
 
   return (
     <>
       {/*ESTE SECTION ES POLEMICA MIRAR SI DEJARLO*/}
-      <section className='firstP'>
+     
         <HeaderPort/>
         <main>
           <Home/>
           <Proyect/>
           <Skills/>
         </main>
-      </section> 
+      
     </>
   )
 }
