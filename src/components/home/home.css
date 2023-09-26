@@ -86,24 +86,120 @@
 
 
 .sect_aboutMe{
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+
+
+.separateExperience{
+  position: relative;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+/* ************************* */
+.cont_experience{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 14px;
   align-items: center;
-  padding-bottom: 2%;
-  padding-left: 10%;
-  padding-right: 10%;
-
+  padding: 20px;
 }
 
-.sect_aboutMe p{
-  max-width: 75ch;
+.cont_experience:nth-child(2){
+  flex-direction: row-reverse;
+  gap: 11px;
+}
+
+.cont_experience:nth-child(2) .info_Experience{
+  view-timeline-name: --revealing-image;
+  view-timeline-axis: block;
+ 
+  /* Attach animation, linked to the  View Timeline */
+  animation: linear experience both;
+  animation-timeline: --revealing-image;
+ 
+  /* Tweak range when effect should run*/
+  animation-range: entry 10% cover 15%;
+}
+
+.cont_experience:nth-child(2) .data_experience{
+  flex-direction: row-reverse;
+}
+
+.time_exp{
   font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.sect_aboutMe p span{
-  color: #316AF7;
-  font-weight: bold;
+.cont_experience:nth-child(2) .data_experience .time_exp{
+  flex-direction: row-reverse;
 }
+
+.info_Experience{
+
+  border-radius: 15px;
+  text-align: left;
+  width: 39.5%;
+  box-shadow: 0 5px 20px rgba(156,55,224,100);
+
+  padding: 1.3rem 2rem;
+}
+
+.info_Experience_p{
+  font-size: 19px;
+}
+
+.data_experience{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.data_experience_img{
+  left:50%;
+  border-radius:50%; 
+  border: 2px solid #F56E00;
+  padding:15px;
+  width:45px;
+  height:45px
+}
+
+.separateExperience::before{
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: hsla(0,0%,100%,0.3);
+  position: absolute;
+}
+
+
+
+/* ************************* */
+
+
+
+
+@keyframes experience{
+  from{
+    transform: translateX(160px);
+
+  }
+
+  to{
+    transform: translateX(0px);
+  }
+}
+
+
 
 
 
@@ -295,8 +391,80 @@
 
   }
 
-  .sect_aboutMe p{
-    font-size: 23px;
-    width: 100%;
+
+
+  /* ***********************  */
+  .cont_experience{
+    flex-direction: column-reverse;
   }
+
+
+  .cont_experience:nth-child(2){
+    flex-direction: column-reverse;
+
+  }
+  
+  
+  .cont_experience:nth-child(2) .data_experience{
+    flex-direction: column-reverse;
+  }
+  
+  .time_exp{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .cont_experience:nth-child(2) .data_experience .time_exp{
+    flex-direction: row-reverse;
+  }
+  
+  .info_Experience{
+  
+    border-radius: 15px;
+    text-align: left;
+    width: 39.5%;
+    box-shadow: 0 5px 20px rgba(156,55,224,100);
+  
+    padding: 1.3rem 2rem;
+  }
+  
+  .info_Experience_p{
+    font-size: 19px;
+  }
+  
+  .data_experience{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .data_experience_img{
+    left:50%;
+    border-radius:50%; 
+    border: 2px solid #F56E00;
+    padding:15px;
+    width:45px;
+    height:45px
+  }
+  
+  .separateExperience::before{
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: hsla(0,0%,100%,0.3);
+    position: absolute;
+  }
+
+
+
+
+
+  /* ***********************  */
+
 }

@@ -33,17 +33,47 @@
     height: 450px;
     text-decoration: none;
     box-shadow: 0px 7px 15px rgba(0, 0, 0, 1);
-         /* Create View Timeline */
+    
+   
+    
+}
+
+.listProyectRef:nth-child(1){
+ /* Create View Timeline */
+ view-timeline-name: --revealing-image;
+ view-timeline-axis: block;
+
+ /* Attach animation, linked to the  View Timeline */
+ animation: linear reveal1 both;
+ animation-timeline: --revealing-image;
+
+ /* Tweak range when effect should run*/
+ animation-range: entry 10% cover 20%;
+}
+
+.listProyectRef:nth-child(2){
+    /* Create View Timeline */
     view-timeline-name: --revealing-image;
     view-timeline-axis: block;
-
+   
     /* Attach animation, linked to the  View Timeline */
-    animation: linear reveal both;
+    animation: linear reveal2 both;
     animation-timeline: --revealing-image;
-
+   
     /* Tweak range when effect should run*/
-    animation-range: entry 10% cover 20%;
-    
+    animation-range: entry 10% cover 30%;
+}
+.listProyectRef:nth-child(3){
+    /* Create View Timeline */
+    view-timeline-name: --revealing-image;
+    view-timeline-axis: block;
+   
+    /* Attach animation, linked to the  View Timeline */
+    animation: linear reveal3 both;
+    animation-timeline: --revealing-image;
+   
+    /* Tweak range when effect should run*/
+    animation-range: entry 10% cover 30%;
 }
 
 .listProyectRef:hover{
@@ -136,11 +166,7 @@
     .listProyectRef{
         margin-left: 0;
         width: 300px;
-        height: 320px;
-
-       
-
-        
+        height: 320px; 
     }
 
     .containerProyect h1{
@@ -162,10 +188,33 @@
         grid-template-columns: auto;
     }
 }
-@keyframes reveal {
+
+@keyframes reveal1 {
 	from {
 		opacity: 0;
-		transform: translateX(-100px);
+		transform: translateX(-150px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@keyframes reveal2 {
+	from {
+		opacity: 0;
+		transform: translateY(-150px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes reveal3 {
+	from {
+		opacity: 0;
+		transform: translateX(+150px);
 	}
 	to {
 		opacity: 1;
