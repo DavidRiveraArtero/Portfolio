@@ -3,6 +3,9 @@ import Documento from '../../assets/doc/CV_DavidRivera.pdf'
 import ImgDavid from '../../assets/img/david.jpg'
 import React from '/svg/react.svg'
 import SVGDown from '/svg/svgDownload.svg'
+import experiences from '../../assets/doc/experience.json'
+
+
 
 export function Home(){
     
@@ -59,47 +62,32 @@ export function Home(){
                 </article>
             </section>
             <section  className="sect_aboutMe">
-                <h1>Mi experiencia</h1>
+                <h1 className="sectionTitle">Mi experiencia</h1>
                 <div className='separateExperience'>
-                    <section className="cont_experience">
-                        <div className="info_Experience">
-                            <h2>T-Systems</h2>
-                            <p className="info_Experience_p">
-                                Mi rol en esta empresa es dar soporte en el analisis de datos 
-                                en uno de los diferentes departamentos que se componen en 
-                                la generalitat de catalunya  
-                            </p>
-                            
-                        </div>
-                        <div className="data_experience">
-                            <img className="data_experience_img" src={React} alt="" />
-                            <div className="time_exp">
-                                <span>→</span>
-                                <p>  2022 - Actualidad</p>
-                            </div>
-                        </div>
-                    </section>
+                    {
+                        experiences.experience.map((experience, index) => {
+                            return(
+                                <section key={index} className="cont_experience">
+                                    <div className="info_Experience">
+                                        <h2>{experience.name}</h2>
+                                        <p className="info_Experience_p">
+                                          {experience.desc}
+                                        </p>
+                                        
+                                    </div>
+                                    <div className="data_experience">
+                                        <img className="data_experience_img" src={experience.logo} alt="" />
+                                        <div className="time_exp">
+                                            <span>→</span>
+                                            <p>{experience.date}</p>
+                                        </div>
+                                    </div>
+                                </section>
+                            )
+                        })
+                    }
+                  
 
-                    <section className="cont_experience">
-                        <div className="info_Experience">
-                            <h2>T-Systems</h2>
-                            <p className="info_Experience_p">
-                                Mi rol en esta empresa es dar soporte en el analisis de datos 
-                                en uno de los diferentes departamentos que se componen en 
-                                la generalitat de catalunya  
-                            </p>
-                            
-                        </div>
-                        <div className="data_experience">
-                            <img className="data_experience_img" src={React} alt="" />
-                            <div className="time_exp">
-                                <span>→</span>
-                                <p>2022 - Actualidad</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    
                 </div>
 
                

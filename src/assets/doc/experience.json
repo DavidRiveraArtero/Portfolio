@@ -1,0 +1,23 @@
+{
+    "experience":[
+        {
+            "name":"T-Systems",
+            "desc":"Mi rol en esta empresa es dar soporte en el analisis de datos en uno de los diferentes departamentos que se componen en la generalitat de catalunya",
+            "date":"2022 - Actualidad",
+            "logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9wusYIZh5I0ExR_trxRJAxPkY8PZVy0dL6g&usqp=CAU"
+        },
+
+        {
+            "name":"FP DAW",
+            "desc":"FP orientado al Desarrollo de Aplicaciones Web ",
+            "date":"2020 - 2022",
+            "logo":"https://moodle.insjoaquimmir.cat/pluginfile.php/1/theme_moove/logo/1662990156/logo-JM-blau_mini-.jpg"
+        },  
+        {
+            "name":"Clicko",
+            "desc":"Mi rol en la empresa es dar mantenimiento a las diferentes paginas web con el lenguaje de PHP en el framwork de Laravel",
+            "date":"2021 - 2022",
+            "logo":"https://media.licdn.com/dms/image/C4D0BAQHsrXAiZamL8Q/company-logo_200_200/0/1660660109552?e=2147483647&v=beta&t=2LdcwT5boa538xHfkVdtjcUb31PoP4S_vs_2wPuSc4w"
+        }
+    ]
+}

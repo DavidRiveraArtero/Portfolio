@@ -108,6 +108,20 @@
   padding: 20px;
 }
 
+.cont_experience:nth-child(1) .info_Experience{
+  view-timeline-name: --revealing-image;
+  view-timeline-axis: block;
+ 
+  /* Attach animation, linked to the  View Timeline */
+  animation: linear experienceLeftBox both;
+  animation-timeline: --revealing-image;
+ 
+  /* Tweak range when effect should run*/
+  animation-range: entry 10% cover 15%;
+}
+
+
+
 .cont_experience:nth-child(2){
   flex-direction: row-reverse;
   gap: 11px;
@@ -118,7 +132,7 @@
   view-timeline-axis: block;
  
   /* Attach animation, linked to the  View Timeline */
-  animation: linear experience both;
+  animation: linear experienceRightBox both;
   animation-timeline: --revealing-image;
  
   /* Tweak range when effect should run*/
@@ -127,6 +141,18 @@
 
 .cont_experience:nth-child(2) .data_experience{
   flex-direction: row-reverse;
+}
+
+.cont_experience:nth-child(3) .info_Experience{
+  view-timeline-name: --revealing-image;
+  view-timeline-axis: block;
+ 
+  /* Attach animation, linked to the  View Timeline */
+  animation: linear experienceLeftBox both;
+  animation-timeline: --revealing-image;
+ 
+  /* Tweak range when effect should run*/
+  animation-range: entry 10% cover 15%;
 }
 
 .time_exp{
@@ -175,20 +201,38 @@
 
 .separateExperience::before{
   content: "";
-  width: 3px;
+  width: 4px;
   height: 100%;
   background: hsla(0,0%,100%,0.3);
   position: absolute;
 }
 
+.separateExperience::after{
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: hsla(0,0%,100%,0.3);
+  position: absolute;
+
+  clip-path: polygon(50% 100%, 0 0 ,  100% 0);
+}
 
 
 /* ************************* */
 
+@keyframes experienceLeftBox{
+  from{
+    transform: translateX(-160px);
+
+  }
+
+  to{
+    transform: translateX(0px);
+  }
+}
 
 
-
-@keyframes experience{
+@keyframes experienceRightBox{
   from{
     transform: translateX(160px);
 
@@ -274,6 +318,7 @@
 
   .info_usuario{
     height: 200px;
+    text-align: center;
   }
 
   .info_enlaces{
