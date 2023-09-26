@@ -266,7 +266,6 @@
   }
 
   .info_enlaces{
-    
     gap: 30px;
   }
 }
@@ -404,9 +403,12 @@
 
   }
   
+  .cont_experience:nth-child(1) .data_experience{
+    flex-direction: column;
+  }
   
   .cont_experience:nth-child(2) .data_experience{
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   
   .time_exp{
@@ -424,12 +426,7 @@
   
   .info_Experience{
   
-    border-radius: 15px;
-    text-align: left;
-    width: 39.5%;
-    box-shadow: 0 5px 20px rgba(156,55,224,100);
-  
-    padding: 1.3rem 2rem;
+    width: 100%;
   }
   
   .info_Experience_p{
