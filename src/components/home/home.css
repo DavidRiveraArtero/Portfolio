@@ -145,6 +145,19 @@
   gap: 14px;
   align-items: center;
   padding: 20px;
+  animation: reveal .4s ease-in-out;
+}
+
+
+
+@keyframes reveal {
+    from{
+      opacity: 0;
+    }
+
+    to{
+      opacity: 1;
+    }
 }
 
 .cont_experience .info_Experience{

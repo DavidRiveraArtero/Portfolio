@@ -11,6 +11,7 @@ import { useState,useEffect } from "react"
 
 export function Home(){
     
+
     const [categ, setCateg] = useState(categorias.categoria[2].name)
     const [a,setA] = useState("")
     const [estado,useStado] = useState(false)
@@ -116,7 +117,7 @@ export function Home(){
                                 <>
                                     {
                                         index % 2 == 0 ? 
-                                            <section key={index} className="cont_experience">
+                                            <section key={experience.name} className="cont_experience">
                                                 <div className="info_Experience">
                                                     <h2>{experience.name}</h2>
                                                     <p className="info_Experience_p">
@@ -133,7 +134,7 @@ export function Home(){
                                                     </div>
                                                 </div>
                                             </section> :
-                                            <section key={index} className="cont_experience reverse">
+                                            <section  className="cont_experience reverse">
                                                 <div className="info_Experience">
                                                     <h2>{experience.name}</h2>
                                                     <p className="info_Experience_p">
@@ -167,5 +168,5 @@ export function Home(){
             </section>
         </>
     )
-}<p>Apasionado de la programación que quiere dar sus primeros pasos en esta 
-industria y <span>seguir creciendo</span> tanto <span>personalmente</span> como <span>profesionalmente</span>, intentando dar siempre lo mejor de mi.</p>
+}/*<p>Apasionado de la programación que quiere dar sus primeros pasos en esta 
+industria y <span>seguir creciendo</span> tanto <span>personalmente</span> como <span>profesionalmente</span>, intentando dar siempre lo mejor de mi.</p>*/
