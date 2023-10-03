@@ -448,9 +448,7 @@
 
   }
   
-  .art_section_quickInfo .info h1{
-    font-size: 30px;
-  }
+
 
   .info_enlaces{
     display: flex;
@@ -473,10 +471,12 @@
 
   .name{
     text-align: center;
+    font-size: 30px;
   }
 
   .ofice{
     text-align: center;
+    font-size: 25px;
   }
 
   .sect_aboutMe{
