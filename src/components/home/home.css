@@ -376,6 +376,91 @@
   .section_categ button{
     width: 20%;
   }
+
+    /* ***********************  */
+    .cont_experience{
+      flex-direction: column-reverse;
+    }
+  
+  
+    .reverse{
+      flex-direction: column-reverse;
+  
+    }
+    
+    .time_exp_reverse{
+      flex-direction: row;
+    }
+  
+    .cont_experience .data_experience{
+      flex-direction: column;
+    }
+    
+    .data_experience_reverse{
+      flex-direction: column;
+    }
+    
+    .time_exp{
+      font-size: 25px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    
+  
+    
+    .cont_experience .data_experience .time_exp span{
+      transform: rotate(90deg);
+    }
+  
+    .time_exp_reverse span{
+      transform: rotate(90deg);
+  
+    }
+    
+    .info_Experience_p{
+      font-size: 19px;
+    }
+    
+    .data_experience{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .data_experience_img{
+      left:50%;
+      border-radius:50%; 
+      border: 2px solid #F56E00;
+      padding:15px;
+      width:45px;
+      height:45px
+    }
+    
+    .separateExperience::before{
+      content: "";
+      width: 3px;
+      height: 100%;
+      background: hsla(0,0%,100%,0.3);
+      position: absolute;
+  
+    }
+  
+    .info_Experience{
+  
+      background-color: rgba(21, 28, 45, 1); /* rgb(17 7 31 / 1) #242424*/
+      width: 100%;
+      
+    }
+  
+    /* ***********************  */
+
+  
 }
 
 @media only screen and (max-device-width: 1472px){
@@ -431,6 +516,20 @@
 }
 
 
+@media only screen and (max-width: 604px){
+  .image{
+    padding-top: 20px;
+    margin: 0% auto;
+  }
+
+  .profile_icon{
+    width: 200px;
+    height: 200px;
+  
+  }
+}
+
+
 @media only screen and (max-width: 390px){
 
   .section_quickInfo{
@@ -450,17 +549,6 @@
     padding: 0;
     transform: rotateX(0deg) rotateY(0deg)!important;
 
-  }
-
-  .image{
-    padding-top: 20px;
-    margin: 0% auto;
-  }
-
-  .profile_icon{
-    width: 200px;
-    height: 200px;
-  
   }
   
   .art_section_quickInfo .info{
@@ -517,94 +605,5 @@
   
     margin: 6px
   }
-
-
-
-  /* ***********************  */
-  .cont_experience{
-    flex-direction: column-reverse;
-  }
-
-
-  .reverse{
-    flex-direction: column-reverse;
-
-  }
-  
-  .time_exp_reverse{
-    flex-direction: row;
-  }
-
-  .cont_experience .data_experience{
-    flex-direction: column;
-  }
-  
-  .data_experience_reverse{
-    flex-direction: column;
-  }
-  
-  .time_exp{
-    font-size: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-
-  
-
-  
-  .cont_experience .data_experience .time_exp span{
-    transform: rotate(90deg);
-  }
-
-  .time_exp_reverse span{
-    transform: rotate(90deg);
-
-  }
-  
-  .info_Experience_p{
-    font-size: 19px;
-  }
-  
-  .data_experience{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-  }
-  
-  .data_experience_img{
-    left:50%;
-    border-radius:50%; 
-    border: 2px solid #F56E00;
-    padding:15px;
-    width:45px;
-    height:45px
-  }
-  
-  .separateExperience::before{
-    content: "";
-    width: 3px;
-    height: 100%;
-    background: hsla(0,0%,100%,0.3);
-    position: absolute;
-
-  }
-
-  .info_Experience{
-
-    background-color: rgba(21, 28, 45, 1); /* rgb(17 7 31 / 1) #242424*/
-    width: 100%;
-    
-  }
-
-
-
-
-
-  /* ***********************  */
 
 }
