@@ -19,7 +19,7 @@ export function Proyect(){
                         proyect.languaje.map((lang,key2)=>{
                           
                           return(
-                            <img key={key2} src={lang.ruta_lang}/>
+                            <img alt='language' key={key2} src={lang.ruta_lang}/>
                           )
                         })
                       }

@@ -18,7 +18,7 @@
 
 .listProyect{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto ;
     width: 100%;
     gap:60px;
     

@@ -1,0 +1,14 @@
+{
+    "categoria":[
+        {
+            "name":"Trabajo"
+        },
+        {
+            "name":"Estudios"
+        },
+        {
+            "name":"All"
+        }
+    ]
+
+}

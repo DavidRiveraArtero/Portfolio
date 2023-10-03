@@ -3,7 +3,7 @@
         {
             "name":"Ajedrez",
             "ruta":"https://main--candid-fenglisu-29722f.netlify.app/",
-            "img":"/img/Ajedrez.png",
+            "img":"/img/Ajedrez.webp",
             "desc":"En este proyecto ponemos en practica la modificacion de arrays",
             "languaje":[
                 {
@@ -21,7 +21,7 @@
         {
             "name":"Api_LOL",
             "ruta":"https://main--candid-fenglisu-29722f.netlify.app/",
-            "img":"/img/Api_lol.png",
+            "img":"/img/Api_lol.webp",
             "desc":"En este proyecto nos conectamos a una API del LOL donde recojemos la informacion de los jugadores y mostramos una lista de las ultimas partidas",
             "languaje":[
                 {
@@ -38,7 +38,7 @@
         {
             "name":"GifApp",
             "ruta":"https://poetic-syrniki-59a9d9.netlify.app/",
-            "img":"/img/GifApp.png",
+            "img":"/img/GifApp.webp",
             "desc":"Buscador de Gift donde guardamos las busquedas en local storage",
             "languaje":[
                 {

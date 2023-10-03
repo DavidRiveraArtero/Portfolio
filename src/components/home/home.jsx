@@ -4,12 +4,15 @@ import ImgDavid from '../../assets/img/david.jpg'
 import React from '/svg/react.svg'
 import SVGDown from '/svg/svgDownload.svg'
 import experiences from '../../assets/doc/experience.json'
+import categorias from '../../assets/doc/categ.json'
+import { useState } from "react"
 
 
 
 export function Home(){
     
-
+    const [categ, setCateg] = useState(categorias.categoria[2].name)
+    const [a,setA] = useState("")
     
 
     function cardAnimation(event){
@@ -31,6 +34,19 @@ export function Home(){
 
     }
 
+    function changeExperience( event ){
+        setCateg(event.target.innerHTML)
+        
+        if(a != ""){
+            a.classList.remove('active')
+           
+        }
+
+        event.target.className += "active"
+        setA(event.target)
+
+    }
+
 
     return (
         <>
@@ -47,8 +63,8 @@ export function Home(){
                         <section className="info_enlaces">
                             <a href={Documento} download={' '}>
                                 <section style={{display:"flex", flexDirection:"row", justifyContent:"center", gap:"10px"}}>
-                                    <span style={{fontSize:"20px"}}>CV</span>
-                                    <img src={SVGDown} style={{width:"15%", fill:"white"}}/>
+                                    <span style={{fontSize:"20px", color:"black", fontWeight:"bold"}}>CV</span>
+                                    <img alt="CV_IMG" src={SVGDown} style={{width:"15%", fill:"white"}}/>
                                 </section>
                                  
                             </a>
@@ -63,27 +79,43 @@ export function Home(){
             </section>
             <section  className="sect_aboutMe">
                 <h1 className="sectionTitle">Mi experiencia</h1>
+                <section className="section_categ">
+                    {
+                        categorias.categoria.map((categoria,index)=> {
+
+                            return(
+                                <button id={index} onClick={changeExperience} key={index}>{categoria.name}</button>
+                            )
+                        })
+                    }
+                </section>
                 <div className='separateExperience'>
+   
                     {
                         experiences.experience.map((experience, index) => {
-                            return(
-                                <section key={index} className="cont_experience">
-                                    <div className="info_Experience">
-                                        <h2>{experience.name}</h2>
-                                        <p className="info_Experience_p">
-                                          {experience.desc}
-                                        </p>
-                                        
-                                    </div>
-                                    <div className="data_experience">
-                                        <img className="data_experience_img" src={experience.logo} alt="" />
-                                        <div className="time_exp">
-                                            <span>→</span>
-                                            <p>{experience.date}</p>
-                                        </div>
-                                    </div>
-                                </section>
-                            )
+                            for(var x = 0;x < experience.categ.length; x++){
+                                if(experience.categ[x] == categ){
+                                    return(
+                                        <section key={index} className="cont_experience">
+                                            <div className="info_Experience">
+                                                <h2>{experience.name}</h2>
+                                                <p className="info_Experience_p">
+                                                  {experience.desc}
+                                                </p>
+                                                
+                                            </div>
+                                            <div className="data_experience">
+                                                <img className="data_experience_img" src={experience.logo} alt="" />
+                                                <div className="time_exp">
+                                                    <span>→</span>
+                                                    <p>{experience.date}</p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    )
+                                }
+                            }
+                           
                         })
                     }
                   
