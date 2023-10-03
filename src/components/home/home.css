@@ -147,7 +147,7 @@
   padding: 20px;
 }
 
-.cont_experience:nth-child(1) .info_Experience{
+.cont_experience .info_Experience{
   view-timeline-name: --revealing-image;
   view-timeline-axis: block;
  
@@ -161,12 +161,12 @@
 
 
 
-.cont_experience:nth-child(2){
+.reverse{
   flex-direction: row-reverse;
   gap: 11px;
 }
 
-.cont_experience:nth-child(2) .info_Experience{
+.reverse .info_Experience{
   view-timeline-name: --revealing-image;
   view-timeline-axis: block;
  
@@ -178,21 +178,9 @@
   animation-range: entry 10% cover 15%;
 }
 
-.cont_experience:nth-child(2) .data_experience{
-  flex-direction: row-reverse;
-}
 
-.cont_experience:nth-child(3) .info_Experience{
-  view-timeline-name: --revealing-image;
-  view-timeline-axis: block;
- 
-  /* Attach animation, linked to the  View Timeline */
-  animation: linear experienceLeftBox both;
-  animation-timeline: --revealing-image;
- 
-  /* Tweak range when effect should run*/
-  animation-range: entry 10% cover 15%;
-}
+
+
 
 .time_exp{
   font-size: 25px;
@@ -203,9 +191,8 @@
   gap: 20px;
 }
 
-.cont_experience:nth-child(2) .data_experience .time_exp{
-  flex-direction: row-reverse;
-}
+
+
 
 .info_Experience{
 
@@ -227,6 +214,23 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
+}
+
+.data_experience_reverse{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.time_exp_reverse{
+  font-size: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .data_experience_img{
@@ -256,6 +260,9 @@
   clip-path: polygon(50% 100%, 0 0 ,  100% 0);
 }
 
+.rotated{
+  transform: rotate(180deg);
+}
 
 /* ************************* */
 
@@ -332,6 +339,7 @@
   .ofice{
     font-size: 40px;
   }
+
 }
 
 @media only screen and (max-device-width: 1626px){
@@ -505,16 +513,20 @@
   }
 
 
-  .cont_experience:nth-child(2){
+  .reverse{
     flex-direction: column-reverse;
 
   }
   
-  .cont_experience:nth-child(1) .data_experience{
+  .time_exp_reverse{
+    flex-direction: row;
+  }
+
+  .cont_experience .data_experience{
     flex-direction: column;
   }
   
-  .cont_experience:nth-child(2) .data_experience{
+  .data_experience_reverse{
     flex-direction: column;
   }
   
@@ -526,14 +538,17 @@
     align-items: center;
     gap: 20px;
   }
+
   
-  .cont_experience:nth-child(2) .data_experience .time_exp{
-    flex-direction: row-reverse;
+
+  
+  .cont_experience .data_experience .time_exp span{
+    transform: rotate(90deg);
   }
-  
-  .info_Experience{
-  
-    width: 100%;
+
+  .time_exp_reverse span{
+    transform: rotate(90deg);
+
   }
   
   .info_Experience_p{
@@ -542,7 +557,7 @@
   
   .data_experience{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 12px;
@@ -563,6 +578,14 @@
     height: 100%;
     background: hsla(0,0%,100%,0.3);
     position: absolute;
+
+  }
+
+  .info_Experience{
+
+    background-color: rgba(21, 28, 45, 1); /* rgb(17 7 31 / 1) #242424*/
+    width: 100%;
+    
   }
 
 
