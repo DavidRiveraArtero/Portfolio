@@ -88,7 +88,7 @@ header .sec_nav button:hover{
     }
 }
   
-@media only screen and (max-width: 390px){
+@media only screen and (max-width: 480px){
     header .sec_nav{
         display: none;
     }

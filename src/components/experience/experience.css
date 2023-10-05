@@ -244,6 +244,22 @@
 
     }
 
- 
+}
 
+@media only screen and (max-device-width: 756px){
+  .section_categ button{
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-device-width: 480px){
+  .about_me h1{
+    text-wrap: nowrap;
+  }
+
+  .section_categ{
+    flex-direction: column;
+    gap: 0px;
+  }
 }

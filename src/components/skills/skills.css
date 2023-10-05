@@ -20,7 +20,35 @@
     border-radius: 25%; 
 }
 
+@media only screen and (max-width: 480px){
+    .section_skills{
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
 
+
+    .all_skills{
+        box-shadow: 0 5px 20px rgba(156,55,224,100);
+        border-radius: 14px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        width: 80%;
+        margin: 0% auto;
+        
+    }
+
+    .all_skills img{
+       
+        padding: 20px; 
+    }
+}
 
 @media only screen and (max-width: 390px){
 

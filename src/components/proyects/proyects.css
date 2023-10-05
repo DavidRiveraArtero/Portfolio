@@ -144,7 +144,7 @@
     width: 50px;
 }
 
-@media only screen and (max-device-width: 390px){
+@media only screen and (max-device-width: 480px){
 
     .containerProyect{
         padding-left: 0%;
