@@ -3,35 +3,13 @@ import Documento from '../../assets/doc/CV_DavidRivera.pdf'
 import ImgDavid from '../../assets/img/david.jpg'
 import React from '/svg/react.svg'
 import SVGDown from '/svg/svgDownload.svg'
-import experiences from '../../assets/doc/experience.json'
-import categorias from '../../assets/doc/categ.json'
-import { useState,useEffect } from "react"
+import { Experience } from "../experience/experience"
+
 
 
 
 export function Home(){
     
-
-    const [categ, setCateg] = useState(categorias.categoria[2].name)
-    const [a,setA] = useState("")
-    const [estado,useStado] = useState(false)
-    const [newArray,useNewArray] = useState(experiences.experience)
-
-    useEffect(()=>{
-       
-        const list = []
-        for(var x = 0;x<newArray.length;x++){
-      
-            for(var y = 0; y<newArray[x].categ.length;y++){
-                
-                if(newArray[x].categ[y] == categ){
-                    list.push(newArray[x])
-                }
-            }
-        }
-        useNewArray(list)
-        
-    },[estado])
 
     function cardAnimation(event){
         document.getElementsByClassName('art_section_quickInfo')[0].style.transition = `none`
@@ -52,24 +30,12 @@ export function Home(){
 
     }
 
-    function changeExperience( event ){
-        setCateg(event.target.innerHTML)
-        useStado(!estado)
-        useNewArray([...experiences.experience])
-        if(a != ""){
-            a.classList.remove('active')
-           
-        }
-
-        event.target.className += "active"
-        setA(event.target)
-
-    }
+   
 
 
     return (
         <>
-            <section className='section_quickInfo' onMouseMove={cardAnimation} onMouseLeave={cancelCardAnimation}>
+            <section id="home" className='section_quickInfo' onMouseMove={cardAnimation} onMouseLeave={cancelCardAnimation}>
                 <article className='art_section_quickInfo' >
                     <div className="image">
                         <img className="profile_icon" alt="profile_icon" src={ImgDavid}/>
@@ -82,7 +48,7 @@ export function Home(){
                         <section className="info_enlaces">
                             <a href={Documento} download={' '}>
                                 <section style={{display:"flex", flexDirection:"row", justifyContent:"center", gap:"10px"}}>
-                                    <span style={{fontSize:"20px", color:"black", fontWeight:"bold"}}>CV</span>
+                                    <span style={{fontSize:"30px", color:"black", fontWeight:"bold"}}>CV</span>
                                     <img alt="CV_IMG" src={SVGDown} style={{width:"15%", fill:"white"}}/>
                                 </section>
                                  
@@ -96,77 +62,7 @@ export function Home(){
                     </div>
                 </article>
             </section>
-            <section  className="sect_aboutMe">
-                <h1 className="sectionTitle">Mi experiencia</h1>
-                <section className="section_categ">
-                    {
-                        categorias.categoria.map((categoria,index)=> {
-
-                            return(
-                                <button id={index} onClick={changeExperience} key={index}>{categoria.name}</button>
-                            )
-                        })
-                    }
-                </section>
-                <div className='separateExperience'>
-   
-                    {
-                       newArray?.map((experience, index) => {       
-                            return(
-
-                                <>
-                                    {
-                                        index % 2 == 0 ? 
-                                            <section key={experience.name} className="cont_experience">
-                                                <div className="info_Experience">
-                                                    <h2>{experience.name}</h2>
-                                                    <p className="info_Experience_p">
-                                                    {experience.desc}
-                                                    </p>
-                                                    
-                                                </div>
-                                                
-                                                <div className="data_experience">
-                                                    <img className="data_experience_img" src={experience.logo} alt="" />
-                                                    <div className="time_exp">
-                                                        <span >→</span>
-                                                        <p>{experience.date}</p>
-                                                    </div>
-                                                </div>
-                                            </section> :
-                                            <section  className="cont_experience reverse">
-                                                <div className="info_Experience">
-                                                    <h2>{experience.name}</h2>
-                                                    <p className="info_Experience_p">
-                                                    {experience.desc}
-                                                    </p>
-                                                    
-                                                </div>
-                                                
-                                                <div className="data_experience_reverse">
-                                                    <img className="data_experience_img" src={experience.logo} alt="" />
-                                                    <div className="time_exp_reverse">
-                                                        <span className="rotated">→</span>
-                                                        <p>{experience.date}</p>
-                                                    </div>
-                                                </div>
-                                            </section>
-                                    }
-
-                                
-                                </>
-                            )
-       
-                        })
-                    }
-                  
-
-                </div>
-
-               
-                
-            </section>
+           <Experience/>
         </>
     )
-}/*<p>Apasionado de la programación que quiere dar sus primeros pasos en esta 
-industria y <span>seguir creciendo</span> tanto <span>personalmente</span> como <span>profesionalmente</span>, intentando dar siempre lo mejor de mi.</p>*/
+}

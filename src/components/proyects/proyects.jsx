@@ -4,7 +4,7 @@ import "./proyects.css"
 
 export function Proyect(){
     return (
-        <section className='containerProyect' id='proyect'>
+        <section className='containerProyect' id='proyectos'>
           <h1 className='sectionTitle'>PROYECTOS</h1>
           <section className='listProyect'>
             {
