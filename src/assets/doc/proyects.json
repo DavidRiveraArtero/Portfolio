@@ -22,7 +22,7 @@
             "name":"Api_LOL",
             "ruta":"https://main--candid-fenglisu-29722f.netlify.app/",
             "img":"/img/Api_lol.webp",
-            "desc":"En este proyecto nos conectamos a una API del LOL donde recojemos la informacion de los jugadores y mostramos una lista de las ultimas partidas",
+            "desc":"En este proyecto nos conectamos a una API del LOL donde recogemos la información de los jugadores y mostramos una lista de las últimas partidas",
             "languaje":[
                 {
                     "ruta_lang":"svg/html.svg"
@@ -39,7 +39,7 @@
             "name":"GifApp",
             "ruta":"https://poetic-syrniki-59a9d9.netlify.app/",
             "img":"/img/GifApp.webp",
-            "desc":"Buscador de Gift donde guardamos las busquedas en local storage",
+            "desc":"Nos conectamos a una API de gifs y guardamos las búsquedas en Local Storage",
             "languaje":[
                 {
                     "ruta_lang":"svg/html.svg"

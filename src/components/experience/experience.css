@@ -67,6 +67,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  
 }
 
 
@@ -246,7 +247,7 @@
 
 }
 
-@media only screen and (max-device-width: 756px){
+@media only screen and (max-device-width: 768px){
   .section_categ button{
     width: 100%;
   }

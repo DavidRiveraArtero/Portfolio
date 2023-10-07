@@ -185,9 +185,13 @@
 
 
 
-@media only screen and (max-device-width: 1028px){
+@media only screen and (max-device-width: 1024px){
     .listProyect{
         grid-template-columns: auto;
+    }
+    .listProyectRef{
+        height: 100%;
+
     }
   
 }
