@@ -4,7 +4,7 @@
             "name":"Ajedrez",
             "ruta":"https://main--candid-fenglisu-29722f.netlify.app/",
             "img":"/img/Ajedrez.webp",
-            "desc":"En este proyecto ponemos en practica la modificacion de arrays",
+            "desc":"Pequeño ajedrez donde ponemos en práctica la modificación de arrays",
             "languaje":[
                 {
                     "ruta_lang":"svg/html.svg"
@@ -20,7 +20,7 @@
         },
         {
             "name":"Api_LOL",
-            "ruta":"https://main--candid-fenglisu-29722f.netlify.app/",
+            "ruta":"https://lighthearted-travesseiro-70fb7c.netlify.app/",
             "img":"/img/Api_lol.webp",
             "desc":"En este proyecto nos conectamos a una API del LOL donde recogemos la información de los jugadores y mostramos una lista de las últimas partidas",
             "languaje":[
