@@ -17,7 +17,7 @@ export function HeaderPort (){
 	 */
 
    function enviarCorreo(insTextoComp){
-    var sEmail = "davidtoy222@gmail.com";
+    var sEmail = "dariarzero@gmail.com";
 		if(sEmail != null) {
 			var sLink = "mailto:" + escape(sEmail)
 			 + "?subject=" + escape("Te han compartirdo el siguente texto")
