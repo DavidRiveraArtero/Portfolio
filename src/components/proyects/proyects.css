@@ -144,7 +144,7 @@
     width: 50px;
 }
 
-@media only screen and (max-device-width: 480px){
+@media only screen and (max-width: 480px){
 
     .containerProyect{
         padding-left: 0%;
@@ -185,7 +185,7 @@
 
 
 
-@media only screen and (max-device-width: 1024px){
+@media only screen and (max-width: 1024px){
     .listProyect{
         grid-template-columns: auto;
     }

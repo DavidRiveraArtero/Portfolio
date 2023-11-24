@@ -82,25 +82,25 @@
 
 }
 
-@media only screen and (max-device-width: 1516px){
+@media only screen and (max-width: 1516px){
     .all_skills{
         grid-template-columns: repeat(5, 1fr); 
     }
 }
 
-@media only screen and (max-device-width: 1264px){
+@media only screen and (max-width: 1264px){
     .all_skills{
         grid-template-columns: repeat(4, 1fr); 
     }
 }
 
-@media only screen and (max-device-width: 1264px){
+@media only screen and (max-width: 1264px){
     .all_skills{
         grid-template-columns: repeat(3, 1fr); 
     }
 }
 
-@media only screen and (max-device-width: 709px){
+@media only screen and (max-width: 709px){
     .all_skills{
         grid-template-columns: repeat(2, 1fr); 
     }

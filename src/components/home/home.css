@@ -188,7 +188,7 @@
 
 }
 
-@media only screen and (max-device-width: 1626px){
+@media only screen and (max-width: 1626px){
   .info{
       padding-left: 65px;
   }
@@ -215,7 +215,7 @@
   
 }
 
-@media only screen and (max-device-width: 1472px){
+@media only screen and (max-width: 1472px){
 
   .info_usuario{
     height: 200px;
