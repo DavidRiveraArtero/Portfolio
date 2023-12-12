@@ -43,7 +43,7 @@ export function Home(){
                     <div className='info'>
                         <section className="info_usuario">
                             <h1 className='name'>Hi, I'm David</h1>
-                            <h1 className='ofice'>FRONTEND DEVELOPER</h1>
+                            <h1 className='ofice'>FRONT-END DEVELOPER</h1>
                         </section>
                         <section className="info_enlaces">
                             <a href={Documento} download={' '}>
