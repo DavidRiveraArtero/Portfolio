@@ -1,6 +1,6 @@
 import "./home.css"
 import Documento from '../../assets/doc/CV_DavidRivera.pdf'
-import ImgDavid from '../../assets/img/david.jpg'
+import ImgDavid from '../../assets/img/david.webp'
 import React from '/svg/react.svg'
 import SVGDown from '/svg/svgDownload.svg'
 import { Experience } from "../experience/experience"
