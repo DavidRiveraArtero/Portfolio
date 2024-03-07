@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Mukta:wght@400;500&family=Playfair+Display&family=Poppins:ital,wght@1,200&display=swap');
-*{
-  font-family: 'Poppins', sans-seri, cursive;
-}
+
 :root {
-  /*font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;*/
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
  
   line-height: 1.5;
   font-weight: 400;
