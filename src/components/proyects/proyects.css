@@ -177,15 +177,14 @@
     }
 
     .listProyectRef figcaption {
-
-        color: white;
-        padding: .75rem;
-        background: var(--c,#0009);
-        clip-path: inset(0 var(--_i,100%) 0 0);
-        margin: -1px;
-        display: flex;
-        flex-direction: column;
         justify-content: start;
+    }
+    .listProyectRef figcaption .desc{
+        font-size: 17px;
+    }
+
+    .listProyectRef figcaption .title{
+        font-size: 25px;
     }
 
 }
