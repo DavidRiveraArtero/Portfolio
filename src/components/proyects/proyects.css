@@ -16,7 +16,6 @@
 .listProyect{
     display: grid;
     grid-template-columns: auto auto ;
-    width: 100%;
     gap:60px;
     
 }
@@ -26,7 +25,7 @@
     border-radius: 1rem;
     overflow: hidden;
     cursor: pointer;
-    width: 100%;
+    width: 540.90px;
     height: 450px;
     text-decoration: none;
     box-shadow: 0px 7px 15px rgba(0, 0, 0, 1);
