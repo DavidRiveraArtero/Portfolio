@@ -176,6 +176,19 @@
         font-size: 20px;
     }
 
+    .listProyectRef figcaption .title{
+        font-size: 20px;
+        text-align: center;
+        color: #F56E00;
+    }
+
+    .listProyectRef figcaption .desc{
+        font-size: 10px;
+        max-width: 36ch;
+        height: 100px;
+    }
+    
+
 }
 
 
