@@ -2,9 +2,6 @@
     padding-top: 3%;
     padding-left: 20%;
     padding-right: 20%;
-    
-
-    
     transition: 1s all ease;
 
 }
@@ -128,6 +125,7 @@
 .imgProyect{
     width: 100%;
     height: 100%;
+    
 }
 
 .languajeProyect{

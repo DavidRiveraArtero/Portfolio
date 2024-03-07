@@ -10,7 +10,7 @@ import { Experience } from "../experience/experience"
 
 export function Home(){
     
-
+    /*
     function cardAnimation(event){
         document.getElementsByClassName('art_section_quickInfo')[0].style.transition = `none`
         const {clientX, clientY} = event
@@ -30,12 +30,15 @@ export function Home(){
 
     }
 
+    onMouseMove={cardAnimation} onMouseLeave={cancelCardAnimation}
+    */
+
    
 
 
     return (
         <>
-            <section id="home" className='section_quickInfo' onMouseMove={cardAnimation} onMouseLeave={cancelCardAnimation}>
+            <section id="home" className='section_quickInfo'>
                 <article className='art_section_quickInfo' >
                     <div className="image">
                         <img className="profile_icon" alt="profile_icon" src={ImgDavid}/>
