@@ -162,7 +162,8 @@
 
     .listProyectRef{
         margin-left: 0;
-
+        width: 300px;
+        height: 320px; 
     }
 
     .containerProyect h1{
