@@ -7,12 +7,8 @@ import './App.css'
 
 function App() {
 
-
-
   return (
     <>
-    
-     
         <HeaderPort/>
         <main>
           <Home/>
