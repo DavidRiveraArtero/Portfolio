@@ -191,16 +191,14 @@
 
 
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1267px){
     .listProyect{
         grid-template-columns: auto;
+        justify-content: center;
     }
     .listProyectRef{
         height: 100%;
     }
-
-    
-  
 }
 
 @keyframes reveal1 {
