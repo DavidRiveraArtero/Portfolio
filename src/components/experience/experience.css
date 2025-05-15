@@ -25,17 +25,6 @@
     }
 }
 
-.cont_experience .info_Experience{
-  view-timeline-name: --revealing-image;
-  view-timeline-axis: block;
- 
-  /* Attach animation, linked to the  View Timeline */
-  animation: linear experienceLeftBox both;
-  animation-timeline: --revealing-image;
- 
-  /* Tweak range when effect should run*/
-  animation-range: entry 10% cover 15%;
-}
 
 
 
@@ -44,17 +33,6 @@
   gap: 11px;
 }
 
-.reverse .info_Experience{
-  view-timeline-name: --revealing-image;
-  view-timeline-axis: block;
- 
-  /* Attach animation, linked to the  View Timeline */
-  animation: linear experienceRightBox both;
-  animation-timeline: --revealing-image;
- 
-  /* Tweak range when effect should run*/
-  animation-range: entry 10% cover 15%;
-}
 
 
 
@@ -127,6 +105,7 @@
   height: 100%;
   background: hsla(0,0%,100%,0.3);
   position: absolute;
+  z-index: -1
 }
 
 .separateExperience::after{
@@ -135,7 +114,6 @@
   height: 5px;
   background: hsla(0,0%,100%,0.3);
   position: absolute;
-
   clip-path: polygon(50% 100%, 0 0 ,  100% 0);
 }
 
@@ -235,7 +213,6 @@
       height: 100%;
       background: hsla(0,0%,100%,0.3);
       position: absolute;
-
     }
 
     .info_Experience{
@@ -263,4 +240,33 @@
     flex-direction: column;
     gap: 0px;
   }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 731px ) {
+
+  .cont_experience .info_Experience{
+    view-timeline-name: --revealing-image;
+    view-timeline-axis: block;
+   
+    /* Attach animation, linked to the  View Timeline */
+    animation: linear experienceLeftBox both;
+    animation-timeline: --revealing-image;
+   
+    /* Tweak range when effect should run*/
+    animation-range: entry 10% cover 15%;
+  }
+
+  .reverse .info_Experience{
+    view-timeline-name: --revealing-image;
+    view-timeline-axis: block;
+   
+    /* Attach animation, linked to the  View Timeline */
+    animation: linear experienceRightBox both;
+    animation-timeline: --revealing-image;
+   
+    /* Tweak range when effect should run*/
+    animation-range: entry 10% cover 15%;
+  }
+  
+  
 }

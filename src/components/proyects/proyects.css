@@ -29,48 +29,11 @@
     height: 450px;
     text-decoration: none;
     box-shadow: 0px 7px 15px rgba(0, 0, 0, 1);
-    
    
     
 }
 
-.listProyectRef:nth-child(1){
- /* Create View Timeline */
- view-timeline-name: --revealing-image;
- view-timeline-axis: block;
 
- /* Attach animation, linked to the  View Timeline */
- animation: linear reveal1 both;
- animation-timeline: --revealing-image;
-
- /* Tweak range when effect should run*/
- animation-range: entry 10% cover 20%;
-}
-
-.listProyectRef:nth-child(2){
-    /* Create View Timeline */
-    view-timeline-name: --revealing-image;
-    view-timeline-axis: block;
-   
-    /* Attach animation, linked to the  View Timeline */
-    animation: linear reveal2 both;
-    animation-timeline: --revealing-image;
-   
-    /* Tweak range when effect should run*/
-    animation-range: entry 10% cover 30%;
-}
-.listProyectRef:nth-child(3){
-    /* Create View Timeline */
-    view-timeline-name: --revealing-image;
-    view-timeline-axis: block;
-   
-    /* Attach animation, linked to the  View Timeline */
-    animation: linear reveal3 both;
-    animation-timeline: --revealing-image;
-   
-    /* Tweak range when effect should run*/
-    animation-range: entry 10% cover 30%;
-}
 
 .listProyectRef:hover{
     box-shadow: 0 0px 2px #000000, 0 -3px 15px #F56E00;/*MIRAR SI NOS GUSTA NEON*/
@@ -136,6 +99,48 @@
 
 .languajeProyect img{
     width: 50px;
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 731px ) {
+    .listProyectRef:nth-child(1){
+        /* Create View Timeline */
+        view-timeline-name: --revealing-image;
+        view-timeline-axis: block;
+       
+        /* Attach animation, linked to the  View Timeline */
+        animation: linear reveal1 both;
+        animation-timeline: --revealing-image;
+       
+        /* Tweak range when effect should run*/
+        animation-range: entry 10% cover 20%;
+       }
+       
+       .listProyectRef:nth-child(2){
+           /* Create View Timeline */
+           view-timeline-name: --revealing-image;
+           view-timeline-axis: block;
+          
+           /* Attach animation, linked to the  View Timeline */
+           animation: linear reveal2 both;
+           animation-timeline: --revealing-image;
+          
+           /* Tweak range when effect should run*/
+           animation-range: entry 10% cover 30%;
+       }
+       .listProyectRef:nth-child(3){
+           /* Create View Timeline */
+           view-timeline-name: --revealing-image;
+           view-timeline-axis: block;
+          
+           /* Attach animation, linked to the  View Timeline */
+           animation: linear reveal3 both;
+           animation-timeline: --revealing-image;
+          
+           /* Tweak range when effect should run*/
+           animation-range: entry 10% cover 30%;
+           display: contents;
+           
+       }
 }
 
 @media only screen and (max-width: 480px){
