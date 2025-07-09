@@ -1,4 +1,6 @@
 .section_quickInfo{
+  padding-left: 20%;
+  padding-right: 20%;
   padding-top: 7%;
   padding-bottom: 7%; /* ESTO PUEDE VARIAR 7%*/
   perspective: 1000px;
