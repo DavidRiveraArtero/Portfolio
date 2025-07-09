@@ -53,7 +53,7 @@
   object-fit: cover;
   border-radius: 50%;
   object-position: 0px 0.1px;
-  aspect-ratio: 800/800;
+  aspect-ratio: 1/1;
   
 }
 
