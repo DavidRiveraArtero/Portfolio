@@ -1,107 +1,88 @@
-.section_quickInfo{
+.section_quickInfo {
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 7%;
   padding-bottom: 7%; /* ESTO PUEDE VARIAR 7%*/
   perspective: 1000px;
-  
-
 }
-  
-.art_section_quickInfo{
+
+.art_section_quickInfo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 15px;
-  box-shadow: 0 5px 20px rgba(156,55,224,100);
+  box-shadow: 0 5px 20px rgba(156, 55, 224, 100);
   border-radius: 15px;
   position: relative;
   width: 100%;
-  
-
- 
 }
-
 
 .art_section_quickInfo .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 370px; /* SE PUEDE CAMBIAR */
-  
 }
 
-
-.ofice{
+.ofice {
   animation: teclear2 2s steps(100) normal;
   margin-top: 0;
   color: #2fedd0;
-  text-shadow: 0 0px 2px #FFF, 0 -3px 20px #2FEDCF;/*MIRAR SI NOS GUSTA NEON*/
-
-
+  text-shadow: 0 0px 2px #fff, 0 -3px 20px #2fedcf; /*MIRAR SI NOS GUSTA NEON*/
 }
 
-.name{
+.name {
   margin-bottom: 0px;
-  animation: teclear 2s steps(222), efecto .5s step-end infinite alternate;
+  animation: teclear 2s steps(222), efecto 0.5s step-end infinite alternate;
 }
 
-
-.profile_icon{
+.profile_icon {
   width: 380px;
   height: 380px;
   object-fit: cover;
   border-radius: 50%;
   object-position: 0px 0.1px;
   aspect-ratio: 1/1;
-  
 }
 
-.info_enlaces{
+.info_enlaces {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 76px;
 }
 
-.info_enlaces a{
+.info_enlaces a {
   text-decoration: none;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 76px;
-  background-color: #F56E00;
+  background-color: #f56e00;
   border-radius: 5px;
   width: 200px;
   text-align: center;
-  box-shadow: 2px 4px 22px -3px rgba(0,0,0,0.75);
-  transition: all .5s;
+  box-shadow: 2px 4px 22px -3px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s;
 }
 
-.info_enlaces a svg{
+.info_enlaces a svg {
   fill: black;
-
 }
 
-.info_enlaces a:hover{
-  box-shadow: 0 0px 2px #000000, 0 -3px 15px #F56E00;/*MIRAR SI NOS GUSTA NEON*/
-
+.info_enlaces a:hover {
+  box-shadow: 0 0px 2px #000000, 0 -3px 15px #f56e00; /*MIRAR SI NOS GUSTA NEON*/
 }
 
-
-
-
-
-.section_categ{
+.section_categ {
   padding-bottom: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: end;
-  
+  justify-content: center;
 }
 
-.section_categ button{
+.section_categ button {
   padding: 15px;
   margin: 15px;
   width: 13%;
@@ -109,208 +90,176 @@
   border-radius: 10px;
   border: none;
   border-bottom: 2px solid black;
-  box-shadow: 0 0px 2px #000000, 0 0px 3px #F56E00;/*MIRAR SI NOS GUSTA NEON*/
+  box-shadow: 0 0px 2px #000000, 0 0px 3px #f56e00; /*MIRAR SI NOS GUSTA NEON*/
 
   background: none;
   font-size: 19px;
   font-weight: bold;
   color: #f56e00;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
-.section_categ button:hover{
-  text-shadow: 0 0px 2px #000000, 0 -3px 25px #F56E00;/*MIRAR SI NOS GUSTA NEON*/
-  border-bottom: 2px solid #F56E00;
-
-
+.section_categ button:hover {
+  text-shadow: 0 0px 2px #000000, 0 -3px 25px #f56e00; /*MIRAR SI NOS GUSTA NEON*/
+  border-bottom: 2px solid #f56e00;
 }
 
-.section_categ button.active{
-  text-shadow: 0 0px 2px #000000, 0 -3px 25px #F56E00;/*MIRAR SI NOS GUSTA NEON*/
-  border-bottom: 2px solid #F56E00;
+.section_categ button.active {
+  text-shadow: 0 0px 2px #000000, 0 -3px 25px #f56e00; /*MIRAR SI NOS GUSTA NEON*/
+  border-bottom: 2px solid #f56e00;
 }
-
-
-
-
-
 
 @keyframes teclear {
   from {
-    clip-path: polygon(0% 0%, 0 0, 0 100%, 0% 100%);  
-    
-
+    clip-path: polygon(0% 0%, 0 0, 0 100%, 0% 100%);
   }
-  
-  to{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    
 
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
 
 @keyframes teclear2 {
   from {
-    clip-path: polygon(0% 0%, 0 0, 0 100%, 0% 100%);  
-    text-shadow: 0 0px 0px #FFF, 0 -0px 0px #2FEDCF;/*MIRAR SI NOS GUSTA NEON*/
-    
-
+    clip-path: polygon(0% 0%, 0 0, 0 100%, 0% 100%);
+    text-shadow: 0 0px 0px #fff, 0 -0px 0px #2fedcf; /*MIRAR SI NOS GUSTA NEON*/
   }
-  
-  to{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    text-shadow: 0 0px 2px #FFF, 0 -6px 25px #2FEDCF;/*MIRAR SI NOS GUSTA NEON*/
 
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    text-shadow: 0 0px 2px #fff, 0 -6px 25px #2fedcf; /*MIRAR SI NOS GUSTA NEON*/
   }
 }
 
-  
 @keyframes efecto {
-  50%{
+  50% {
     border-color: transparent;
-
   }
 }
 
 /* MEDIA */
-@media only screen and (max-width: 1920px){
-  .info{
+@media only screen and (max-width: 1920px) {
+  .info {
     padding-left: 150px;
   }
-  .name{
+  .name {
     font-size: 40px;
   }
 
-  .ofice{
+  .ofice {
     font-size: 40px;
   }
-
 }
 
-@media only screen and (max-width: 1626px){
-  .info{
-      padding-left: 65px;
+@media only screen and (max-width: 1626px) {
+  .info {
+    padding-left: 65px;
   }
 
-  .ofice{
+  .ofice {
     font-size: 35px;
   }
 
-  .info_enlaces{
+  .info_enlaces {
     gap: 30px;
   }
 
-  .section_categ{
+  .section_categ {
     justify-content: center;
     gap: 20px;
   }
 
-  .section_categ button{
+  .section_categ button {
     width: 20%;
   }
-
-    
-
-  
 }
 
-@media only screen and (max-width: 1472px){
-
-  .info_usuario{
+@media only screen and (max-width: 1472px) {
+  .info_usuario {
     height: 200px;
     text-align: center;
   }
 
-  .info_enlaces{
+  .info_enlaces {
     flex-direction: column;
     height: 100%;
     gap: 15px;
     align-items: center;
   }
 
-  .info_enlaces a{
+  .info_enlaces a {
     width: 90%;
-   
   }
 
-  .info_enlaces a section{
+  .info_enlaces a section {
     align-items: center;
   }
 }
 
-
-@media only screen and (max-width: 1392px){
-  .info{
+@media only screen and (max-width: 1392px) {
+  .info {
     padding-left: 55px;
   }
 
-  .ofice{
+  .ofice {
     font-size: 30px;
-    }
+  }
 }
 
-@media only screen and (max-width: 1282px){
-  .info{
+@media only screen and (max-width: 1282px) {
+  .info {
     padding-left: 0px;
     flex-direction: column;
     justify-content: space-between;
   }
-  .art_section_quickInfo{
+  .art_section_quickInfo {
     flex-direction: column;
     align-items: center;
   }
 
-  .info_enlaces{
+  .info_enlaces {
     flex-direction: row;
     align-items: normal;
   }
 }
 
-
-@media only screen and (max-width: 640px){
-  .image{
+@media only screen and (max-width: 640px) {
+  .image {
     padding-top: 20px;
     margin: 0% auto;
   }
 
-  .profile_icon{
+  .profile_icon {
     width: 200px;
     height: 200px;
-  
   }
 }
 
-
-@media only screen and (max-width: 480px){
-
-  .section_quickInfo{
+@media only screen and (max-width: 480px) {
+  .section_quickInfo {
     padding-left: 0%;
     padding-right: 0%;
     padding-top: 10%;
     padding-bottom: 0%;
     perspective: none;
     width: 350px;
-    transform: rotateX(0deg) rotateY(0deg)!important;
+    transform: rotateX(0deg) rotateY(0deg) !important;
     margin: 0% auto;
   }
-  
-  .art_section_quickInfo{
+
+  .art_section_quickInfo {
     display: flex;
     flex-direction: column;
     padding: 0;
-    transform: rotateX(0deg) rotateY(0deg)!important;
-
+    transform: rotateX(0deg) rotateY(0deg) !important;
   }
-  
-  .art_section_quickInfo .info{
+
+  .art_section_quickInfo .info {
     padding-left: 0;
-    transform: rotateX(0deg) rotateY(0deg)!important;
-
+    transform: rotateX(0deg) rotateY(0deg) !important;
   }
-  
 
-
-  .info_enlaces{
+  .info_enlaces {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -318,43 +267,38 @@
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 50px;
-    transform: rotateX(0deg) rotateY(0deg)!important;
-
+    transform: rotateX(0deg) rotateY(0deg) !important;
   }
 
   .info_enlaces a {
     margin-bottom: 10px;
     width: 100%;
-    transform: rotateX(0deg) rotateY(0deg)!important;
-
+    transform: rotateX(0deg) rotateY(0deg) !important;
   }
 
-  .name{
+  .name {
     text-align: center;
     font-size: 30px;
   }
 
-  .ofice{
+  .ofice {
     text-align: center;
     font-size: 25px;
   }
 
-  .sect_aboutMe{
+  .sect_aboutMe {
     padding-left: 10%;
     padding-right: 10%;
-
   }
 
-  .section_categ{
+  .section_categ {
     flex-direction: column;
     align-items: center;
-    gap: 0px
-    
+    gap: 0px;
   }
-  .section_categ button{
+  .section_categ button {
     width: 80%;
-  
-    margin: 6px
-  }
 
+    margin: 6px;
+  }
 }
