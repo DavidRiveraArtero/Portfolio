@@ -18,23 +18,7 @@
                 }
             ]
         },
-        {
-            "name":"Api_LOL",
-            "ruta":"https://lighthearted-travesseiro-70fb7c.netlify.app/",
-            "img":"/img/Api_lol.webp",
-            "desc":"En este proyecto nos conectamos a una API del LOL donde recogemos la información de los jugadores y mostramos una lista de las últimas partidas",
-            "languaje":[
-                {
-                    "ruta_lang":"svg/html.svg"
-                },
-                {
-                    "ruta_lang":"svg/css.svg"
-                },
-                {
-                    "ruta_lang":"svg/react.svg"
-                }
-            ]
-        },
+
         {
             "name":"GifApp",
             "ruta":"https://poetic-syrniki-59a9d9.netlify.app/",
